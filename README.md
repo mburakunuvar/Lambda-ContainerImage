@@ -10,8 +10,9 @@ $ docker run -p 9000:8080 random-letter:latest
 $ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
 
 $ aws ecr create-repository --repository-name random-letter --image-scanning-configuration scanOnPush=true
-$ docker tag random-letter:latest 123412341234.dkr.ecr.sa-east-1.amazonaws.com/random-letter:latest
-$ aws ecr get-login-password | docker login --username AWS --password-stdin 123412341234.dkr.ecr.sa-east-1.amazonaws.com
-$ docker push 123412341234.dkr.ecr.sa-east-1.amazonaws.com/random-letter:latest
 
+$ docker tag random-letter:latest AWSID.dkr.ecr.sa-east-1.amazonaws.com/random-letter:latest
+$ aws ecr get-login-password | docker login --username AWS --password-stdin AWSID.dkr.ecr.sa-east-1.amazonaws.com
+
+$ docker push AWSID.dkr.ecr.eu-west-1.amazonaws.com/random-letter
 ```
