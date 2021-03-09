@@ -1,0 +1,24 @@
+{
+  "name": "lambda-containerimage",
+  "version": "1.0.0",
+  "description": "lambda container image support",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mburakunuvar/Lambda-ContainerImage.git"
+  },
+  "author": "buraku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mburakunuvar/Lambda-ContainerImage/issues"
+  },
+  "homepage": "https://github.com/mburakunuvar/Lambda-ContainerImage#readme",
+  "dependencies": {
+    "faker": "^5.4.0",
+    "get-stream": "^6.0.0",
+    "pdfkit": "^0.11.0"
+  }
+}
